@@ -59,6 +59,8 @@ git clone git@github.com:maaslalani/PicturePerfect.git
 ```
 
 ### Getting `Google_Application_Credentials`
+[Google Application Credentials](https://console.cloud.google.com/projectselector/apis/credentials)
+
 After you get you secret credentials type the following command, replace the filepath with the path to your secret credentials.
 ```bash
 export GOOGLE_APPLICATION_CREDENTIALS=~/Documents/Projects/Hack-Harvard-2018/PicturePerfect.json
