@@ -52,7 +52,32 @@ Future Steps
 Lastly, we plan to use sentiment analysis on the caption of each image which can contribute to the health score of the user.
 
 ## Usage
+To get up and running with this project you need google application credentials and python3.
+First clone this project.
+```bash
+git clone git@github.com:maaslalani/PicturePerfect.git
+```
+
 ### Getting `Google_Application_Credentials`
+After you get you secret credentials type the following command, replace the filepath with the path to your secret credentials.
+```bash
+export GOOGLE_APPLICATION_CREDENTIALS=~/Documents/Projects/Hack-Harvard-2018/PicturePerfect.json
+```
 
 ### Setting up dependencies
+Install `python3` with homebrew
+```bash
+brew install python3
+```
 
+Install dependencies
+```bash
+pip3 install -r requirements.txt
+```
+
+### Running the project
+To run the main program use the following command.
+```bash
+python3 main.py
+```
+`--help`, `--verbose`, and `--debug` are valid flags.
