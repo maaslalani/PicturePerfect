@@ -28,6 +28,23 @@ computationally­generated features. These findings suggest new avenues for earl
 and detection of mental illness.
 
 ## Variables and Criteria 
+There were several criteria we considered when constructing the health score, mainly derived from the research paper.
+
+* Hue, Saturation, Brightness
+Depressed individuals were found to have a more blueish tint in their photos which is quantified through a higher value in hue. Depressed individuals were also more likely to posts photos that did not have a high saturation value nor a high brightness, meaning their photos would be on the darker side with a more blue tone.
+
+* Comments to Likes ratio
+It was found that depressed individuals were more likely to received more comments on their posts, while simultaneously receiving less likes. To implement this in our program we parse the meta data of the user's posts and found the number of likes and number of comments and created a ratio of `# comments / # likes`. This ratio would indicate a higher likelihood of an individual being depressed if it were closer to one.
+
+* Facial Detection 
+There lies a relationship between the number of people in a photo and a user's mental health. Having an image where there are more people present indicates mental wellbeing. To implement this in our program, we ran each image through a facial recognition software that outputs the number of faces there are in a given image which allowed us to assign a score to the user based on this factor.
+
+* Number of posts
+A mentally unhealthy individual was found to post more on average and per day than a mentally healthy individual. To implement this, we found the metadata concerning number of posts user had. The higher this number the higher score they were assigned.
+
+* Caption Analysis
+Future Steps
+Lastly, we plan to use sentiment analysis on the caption of each image which can contribute to the health score of the user.
 
 ## Usage
 ### Getting `Google_Application_Credentials`
